@@ -1,0 +1,21 @@
+.centrarContenido{
+    text-align: center;
+}
+.recuadro{ 
+    margin: 50px; 
+    border: 1px solid gray; 
+    padding: 20px; 
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+body{
+    background-color: rgb(230, 178, 214);
+}
+.bordeRosa{
+    border: 1px solid #ab4493;
+}
+.tablaResultado{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2% ;
+}

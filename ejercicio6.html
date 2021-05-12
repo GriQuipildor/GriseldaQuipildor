@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio6</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="ejercicio6.php" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre">
+        <br>
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido">
+        <br>
+        <br>
+        <label for="dni">DNI *</label>
+        <input type="number" name="dni" required>
+        <br>
+        <br>
+        <label for="fechaNac">Fecha de nacimiento</label>
+        <input type="date" name="fechaNac">  
+        <br>
+        <br>
+        <label for="email">Correo electrónico *</label>
+        <input type="email" name="email" required>  
+        <br>
+        <br>
+        <label for="provincia">Provincia</label> 
+        <select name="provincia">
+            <option value="">Seleccione</option>
+            <option value="Jujuy">Jujuy</option>
+            <option value="Salta">Salta</option>
+            <option value="Tucumán">Tucumán</option>
+            <option value="Corrientes">Corrientes</option>
+            <option value="Misiones">Misiones</option>
+            <option value="Entre Ríos">Entre Ríos</option>
+            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="Córdoba">Córdoba</option>
+            <option value="Tierra del Fuego">Tierra del Fuego</option>
+            <option value="Santa Cruz">Santa Cruz</option>
+            <option value="Chubut">Chubut</option>
+        </select>
+        <br>
+        <br>
+        <label for="donante">Donante *:</label>
+        <label for="donante">Si</label>
+        <!-- El atributo checked se usa para indicar que el elemento está seleccionado, asi no me mostrara un error en la tabla si el usuario no elige alguno-->
+        <input type="radio" name="donante" value="Si" checked>
+        <label for="donante">No</label>
+        <input type="radio" name="donante" value="No">
+        <br>
+        <br>
+        <label for=terminos>Acepta términos y condiciones *</label>
+        <input type="checkbox" name="terminos" required>
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
