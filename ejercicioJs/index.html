@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="width: auto; height: auto; text-align: center;">
+        <span style="color: red;">
+            <h1>Selectores DOM</h1>
+        </span>
+
+        <div style="width: auto; height: auto; text-align: center;">
+            <h1 id="texto1" onmouseover="cambiarColor()">TEXTO 1</h1>
+        </div>
+        <hr />
+        <select name="colores" id="colores" style="width: 100px;" onchange="mostrarColor()">
+            <option value="amarillo">Amarillo</option>
+            <option value="azul">Azul</option>
+            <option value="rojo">Rojo</option>
+        </select>
+    </div>
+
+    <hr />
+    <div style="width: auto; height: auto; text-align: center; padding-top: 10px;">
+        <select name="numeros" id="numeros" style="width: 100px;" onchange="mostrarNum()">
+            <option value="1">uno</option>
+            <option value="2">dos</option>
+            <option value="3">tres</option>
+        </select>
+    </div>
+    <hr />
+
+    <div style="width: auto; height: auto; text-align: center; padding-top: 10px;">
+        <textarea id="textarea" ondblclick="mensaje()">Esto es un ejercicio practico de programacion II</textarea>
+    </div>
+
+    <hr />
+
+    <div style="width: auto; height: auto; text-align: center; padding-top: 10px;">
+        <input type="number" name="valor1"> + <input type="number" name="valor2"> = <input type="number" name="resultado"><br>
+        <button name="suma" onclick="sumar()">Sumar</button>
+    </div>
+    <hr />
+
+    <div id="div">
+        Esto es un DIV
+    </div>
+    <hr />
+    <script src="script.js"></script>
+</body>
+</html>
