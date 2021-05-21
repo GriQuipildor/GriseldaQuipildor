@@ -20,7 +20,12 @@ function sumar(){
         alert("Ingrese un número en el campo 1");
     } else if (valor2 == ""){
         alert("Ingrese un número en el campo 2")     
-    } else {
+    } else if (isNaN(valor1) || isNaN(valor2)){
+        // si entro aqui verifico que al menos un valor ingresado no es un numero
+        // por lo tanto lo sumo como si fuera string
+        var resultado = (valor1) + (valor2);
+        document.getElementsByName("resultado")[0].value = resultado;
+    } else  {           
         var resultado = Number(valor1) + Number(valor2);
         document.getElementsByName("resultado")[0].value = resultado;
     } 
