@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Ajax</title>
+    <link rel="stylesheet" href="../bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../estilos/styleEj7.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-evenly">
+            <div class="col-6 text-center">
+                <h4>País</h4>
+                <select id="pais" onchange="cargaProv()">
+                    <option value="">Seleccione</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="uruguay">Uruguay</option>
+                </select>
+            </div>
+            <div class="col-6 text-center">
+                <h4>Provincia/Departamento</h4>
+                <select id=provincias>
+                    <option value="">Seleccione</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="ajax.js"></script>
+</body>
+</html>
