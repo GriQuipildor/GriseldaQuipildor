@@ -1,0 +1,41 @@
+.centrarContenido{
+    text-align: center;
+}
+.bordeRosa{
+    border: 1px solid #ab4493;
+}
+.recuadro{ 
+    margin: 50px; 
+    border: 1px solid gray; 
+    padding: 20px; 
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.fondo{
+    background-color: rgb(230, 178, 214);
+}
+.tablaResultado{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2% ;
+}
+table td{
+    padding-bottom: 10px;
+}
+.botonAgregar{
+    margin-top: 30px;
+}
+.tituloTabla{
+    font-size: 18px;
+    font-weight: 600;
+}
+.botonHome{
+    margin: 20px;
+}
+.tablaDatos th{
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+.tablaDatos td{
+    background-color: rgb(224, 224, 224);
+}
