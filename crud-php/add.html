@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Agregar datos</title>
+	<link rel="stylesheet" href="../bootstrap5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../estilos/estilosCrud.css">
+</head>
+
+<body class="fondo">
+	<a href="index.php" class="btn btn-dark botonHome">Inicio</a>
+	<div class="centrarContenido">
+		<h3>Agregar datos</h3>
+	</div>
+	<div class="recuadro tablaResultado">
+		<form action="add.php" method="post" name="form1">
+			<table width="100%">
+				<tr> 
+					<td><span class="tituloTabla">Nombre</span></td>
+					<td><input type="text" name="name" class="form-control bordeRosa"></td>
+				</tr>
+				<tr> 
+					<td><span class="tituloTabla">Edad</span></td>
+					<td><input type="text" name="age" class="form-control bordeRosa"></td>
+				</tr>
+				<tr> 
+					<td><span class="tituloTabla">Email</span></td>
+					<td><input type="text" name="email" class="form-control bordeRosa"></td>
+				</tr>
+			</table>
+			<div class="centrarContenido botonAgregar">
+				<input type="submit" name="Submit" value="Agregar" class="btn btn-dark">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
+
