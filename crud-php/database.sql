@@ -1,6 +1,7 @@
 create database test;
 
-use test;
+-- utiliza esta BD
+use test; 
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL auto_increment,
