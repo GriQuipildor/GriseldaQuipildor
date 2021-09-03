@@ -43,7 +43,6 @@
             echo "</div>";
         }
     }
-     
 ?>
 
 <!DOCTYPE html>
@@ -52,7 +51,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Agregar datos</title>
     <link rel="stylesheet" href="../bootstrap5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../estilos/estilosCrud.css">
 </head>
@@ -66,19 +65,19 @@
 			<table width="100%">
 				<tr> 
 					<td><span class="tituloTabla">Nombre</span></td>
-					<td><input type="text" name="nombre" class="form-control bordeRosa"></td>
+					<td><input type="text" name="nombre" class="form-control bordeRosa" required></td>
 				</tr>
 				<tr> 
 					<td><span class="tituloTabla">Apellido</span></td>
-					<td><input type="text" name="apellido" class="form-control bordeRosa"></td>
+					<td><input type="text" name="apellido" class="form-control bordeRosa" required></td>
 				</tr>
 				<tr> 
 					<td><span class="tituloTabla">Email</span></td>
-					<td><input type="email" name="email" class="form-control bordeRosa"></td>
+					<td><input type="email" name="email" class="form-control bordeRosa" required></td>
 				</tr>
                 <tr> 
 					<td><span class="tituloTabla">Password</span></td>
-					<td><input type="password" name="password" class="form-control bordeRosa"></td>
+					<td><input type="password" name="password" class="form-control bordeRosa" required></td>
 				</tr>
 			</table>
 			<div class="centrarContenido botonAgregar">
