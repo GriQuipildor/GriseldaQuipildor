@@ -31,7 +31,6 @@
         } else { 
             // if all the fields are filled (not empty) 
             
-            
 //ver si ya esta registrado en la BD haciendo un SELECT
 
             //insert data to database
