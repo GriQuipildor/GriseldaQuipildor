@@ -41,7 +41,7 @@
             //display success message
             echo "<div class='centrarContenido alert alert-success tablaResultado'>";
             echo "<font color='black'>Datos agregados con éxito.<br>" ;
-            echo "<br/><a class='btn btn-dark' href='index.php'>Ver resultados</a>";
+            echo "<br/><a class='btn btn-dark' href='index.php'>Volver</a>";
             echo "</div>";
         }
     }
