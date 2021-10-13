@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body>
+    <form id="personaForm"> 
+        <h1>Consultar lugar de votación</h1>
+        Documento <input type="number" name="dni" value='34608031' required>  <br> <br>
+        Sexo 
+        <br>
+        <input type="radio" name="sexo" value="masculino" required> 
+        Masculino
+        <input type="radio" name="sexo" value="femenino" required> 
+        Femenino
+        <input type="radio" name="sexo" value="x" required> 
+        Sin identificar
+        <br> <br>
+        Provincias 
+        <select name="provincia" required>
+            <option value="">Seleccione</option>>
+            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="Catamarca">Catamarca</option>
+            <option value="Córdoba">Córdoba</option>
+            <option value="Corrientes">Corrientes</option>
+            <option value="Chaco">Chaco</option>
+            <option value="Chubut">Chubut</option>
+            <option value="Entre Ríos">Entre Ríos</option>
+            <option value="Entre Ríos">Formosa</option>
+            <option value="Jujuy">Jujuy</option>
+            <option value="La Pampa">La Pampa</option>
+            <option value="La Rioja">La Rioja</option>
+            <option value="Mendoza">Mendoza</option>
+            <option value="Misiones">Misiones</option>
+            <option value="Neuquén">Neuquén</option>
+            <option value="Río Negro">Río Negro</option>
+            <option value="Salta">Salta</option>
+            <option value="San Juan">San Juan</option>
+            <option value="San Luis">San Luis</option>
+            <option value="Santa Cruz">Santa Cruz</option>
+            <option value="Santa Fe">Santa Fe</option>
+            <option value="Santiago del Estero">Santiago del Estero</option>
+            <option value="Tucumán">Tucumán</option>
+            <option value="Tierra del Fuego">Tierra del Fuego</option>
+        </select>
+        <br> <br>
+        <input type="submit">
+    </form>
+    <hr>
+    <table id='tablaResultado'>
+        <tr>
+            <td>Colegio</td>
+            <td>Dirección</td>
+            <td>Número</td>
+        </tr>
+        <tr>
+            <td id='nombreColegio'></td>
+            <td id='direccionColegio'></td>
+            <td id='numeroColegio'></td>
+        </tr>
+    </table>
+    <script src="personas.js"></script>
+</body>
+</html>
