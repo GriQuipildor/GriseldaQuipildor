@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-10-2021 a las 16:21:33
--- Versión del servidor: 10.4.21-MariaDB
--- Versión de PHP: 8.0.10
+-- Tiempo de generación: 14-10-2021 a las 21:18:00
+-- Versión del servidor: 10.4.20-MariaDB
+-- Versión de PHP: 8.0.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20197,6 +20197,25 @@ INSERT INTO `personas` (`id`, `apellido`, `nombre`, `dni`, `provincia`, `colegio
 (19999, 'Villareal', 'Valentín Negrete', '80367010', 'Tierra del Fuego', 37, '1975-08-29', 'i'),
 (20000, 'Garza', 'Ing. Luciana Pulido Segundo', '82636535', 'Neuquén', 33, '1992-02-21', 'm');
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `provincias`
+--
+
+CREATE TABLE `provincias` (
+  `provincia_id` int(11) NOT NULL,
+  `nombre` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `provincias`
+--
+
+INSERT INTO `provincias` (`provincia_id`, `nombre`) VALUES
+(1, 'Buenos Aires'),
+(2, 'Catamarca');
+
 --
 -- Índices para tablas volcadas
 --
@@ -20215,6 +20234,12 @@ ALTER TABLE `personas`
   ADD KEY `FK_peronasColegios` (`colegio_id`);
 
 --
+-- Indices de la tabla `provincias`
+--
+ALTER TABLE `provincias`
+  ADD PRIMARY KEY (`provincia_id`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -20229,6 +20254,12 @@ ALTER TABLE `colegios`
 --
 ALTER TABLE `personas`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20001;
+
+--
+-- AUTO_INCREMENT de la tabla `provincias`
+--
+ALTER TABLE `provincias`
+  MODIFY `provincia_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restricciones para tablas volcadas
