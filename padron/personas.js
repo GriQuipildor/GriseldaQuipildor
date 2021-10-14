@@ -11,11 +11,15 @@ formulario.addEventListener("submit", function(e){
     })
     .then(res => res.json())
         .then(data => {
-            console.log(data);
-            console.log(data.nombre);
-            document.getElementById('nombreColegio').innerText = data.nombre;
-            document.getElementById('direccionColegio').innerText = data.direccion;
-            document.getElementById('numeroColegio').innerText = data.numero;
-
+            if (data === null) {
+                document.getElementById('tablaResultado').style.display = 'none';
+                alert("No se ha encontrado ningún resultado con los datos ingresados. Intente nuevamente");
+            }else{
+            //console.log(data);
+                document.getElementById('tablaResultado').style.display = 'inline-block';
+                document.getElementById('nombreColegio').innerText = data.nombre;
+                document.getElementById('direccionColegio').innerText = data.direccion;
+                document.getElementById('numeroColegio').innerText = data.numero;
+            }
         })
 })

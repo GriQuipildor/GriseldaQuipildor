@@ -12,24 +12,24 @@
         Documento <input type="number" name="dni" value='34608031' required>  <br> <br>
         Sexo 
         <br>
-        <input type="radio" name="sexo" value="masculino" required> 
+        <input type="radio" name="sexo" value="m" required> 
         Masculino
-        <input type="radio" name="sexo" value="femenino" required> 
+        <input type="radio" name="sexo" value="n" required> 
         Femenino
-        <input type="radio" name="sexo" value="x" required> 
+        <input type="radio" name="sexo" value="i" required> 
         Sin identificar
         <br> <br>
         Provincias 
-        <select name="provincia" required>
-            <option value="">Seleccione</option>>
-            <option value="Buenos Aires">Buenos Aires</option>
+        <select id="provincia" name="provincia" required>
+            <option value="">Seleccione</option>
+            <!-- <option value="Buenos Aires">Buenos Aires</option>
             <option value="Catamarca">Catamarca</option>
             <option value="Córdoba">Córdoba</option>
             <option value="Corrientes">Corrientes</option>
             <option value="Chaco">Chaco</option>
             <option value="Chubut">Chubut</option>
             <option value="Entre Ríos">Entre Ríos</option>
-            <option value="Entre Ríos">Formosa</option>
+            <option value="Formosa">Formosa</option>
             <option value="Jujuy">Jujuy</option>
             <option value="La Pampa">La Pampa</option>
             <option value="La Rioja">La Rioja</option>
@@ -44,13 +44,15 @@
             <option value="Santa Fe">Santa Fe</option>
             <option value="Santiago del Estero">Santiago del Estero</option>
             <option value="Tucumán">Tucumán</option>
-            <option value="Tierra del Fuego">Tierra del Fuego</option>
+            <option value="Tierra del Fuego">Tierra del Fuego</option> -->
+
         </select>
         <br> <br>
         <input type="submit">
     </form>
     <hr>
-    <table id='tablaResultado'>
+    <!-- CSS display:none oculta la tabla -->
+    <table id='tablaResultado' style="display: none;">
         <tr>
             <td>Colegio</td>
             <td>Dirección</td>
@@ -62,6 +64,7 @@
             <td id='numeroColegio'></td>
         </tr>
     </table>
+    <script src="provincia.js"></script>
     <script src="personas.js"></script>
 </body>
 </html>
