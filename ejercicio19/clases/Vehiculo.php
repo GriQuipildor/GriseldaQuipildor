@@ -19,4 +19,13 @@ class Vehiculo{
         $this->motor = true;
         }
     }
+
+    public function apagar(){
+        if ($this->motor == false) {
+            echo "El motor esta apagado<br>";
+        }else{
+            echo "Ahora el motor esta apagado";
+        $this->motor = false;
+        }
+    }
 }
