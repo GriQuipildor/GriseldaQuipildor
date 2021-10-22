@@ -24,4 +24,8 @@ class Coche extends Vehiculo{
         $info .= "Color: ". $this->getColor()."<br>";
     echo $info;
     }
+    //fecha 21-10 funtion static
+    public static function saludar(){
+        echo "Hola buenas noches";
+    }
 }

@@ -7,3 +7,5 @@
     $auto->estado();
     $auto->encender();
     
+    //fecha 21-10
+    coche::saludar();
