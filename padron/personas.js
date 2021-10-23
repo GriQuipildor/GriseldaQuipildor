@@ -3,6 +3,8 @@ let formulario = document.getElementById("personaForm")
 formulario.addEventListener("submit", function(e){
     //e.prevent.. cancela el evento, sin detener el resto del funcionamiento del evento, es decir, puede ser llamado de nuevo.
     e.preventDefault();
+    
+    //obtiene name y value del formulario(le saca el resto del html)
     let datos = new FormData(personaForm);
     
     fetch("personas.php",{
@@ -20,6 +22,8 @@ formulario.addEventListener("submit", function(e){
                 document.getElementById('nombreColegio').innerText = data.nombre;
                 document.getElementById('direccionColegio').innerText = data.direccion;
                 document.getElementById('numeroColegio').innerText = data.numero;
+                document.getElementById('nombrePersona').innerText = data.nombreP;
+                document.getElementById('apellido').innerText = data.apellido;
             }
         })
 })
