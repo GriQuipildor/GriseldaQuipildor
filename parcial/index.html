@@ -9,11 +9,11 @@
 <body>
     <h1>Consulta</h1>
     <form id="dniForm">
-        <input type="number" name="dni" value="18688334" placeholder="Ingrese DNI"> <br> <br>
+        <input type="number" name="dni" value="57120601" placeholder="Ingrese DNI"> <br> <br>
         <input type="submit" value="Consultar">
     </form>
     <hr>
-    <table id=tablaResult>
+    <!-- <table id=tablaResult>
         <tr>
             <td>Nombre</td>
             <td>Apellido</td>
@@ -24,8 +24,20 @@
             <td id="apellido"></td>
             <td id="edad"></td>
         </tr>
-    </table>
+    </table> -->
+    <div style="display: flex;"> 
+        <b>Nombre:</b><div id="nombre"></div>
+    </div>
+    <div style="display: flex;">
+       <b>Apellido:</b><div id="apellido"></div>
+    </div>
+    <div style="display: flex;">
+        <b>Edad:</b> <div id="edad"></div>
+    </div>
+
+    <div id="color">
+        -
+    </div>
     <script src="persona.js"></script>
-    <script src="persona.php"></script>
 </body>
 </html>
