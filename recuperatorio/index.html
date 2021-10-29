@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta</title>
+</head>
+<body>
+    <h2>Consulta mujer</h2>
+    <form id="dniMujer">
+        <input type="number" name="dni" placeholder="Ingrese DNI" value="57120601" required> <br> <br>
+        <input type="submit" value="Buscar">
+    </form>
+    <div style="display: flex;">
+        <b>Nombre:</b><div id="nombre"></div>
+    </div>
+    <div style="display: flex;">
+        <b>Apellido:</b><div id="apellido"></div>
+     </div>
+
+     <h2>Consulta hombre</h2>
+     <form id="dniH">
+        <input type="number" name="dni" placeholder="Ingrese DNI" required> <br> <br>
+        <input type="submit" value="Buscar">
+    </form>
+    <div style="display: flex;">
+        <b>Nombre:</b><div id="nombreH"></div>
+    </div>
+    <div style="display: flex;">
+        <b>Apellido:</b><div id="apellidoH"></div>
+     </div>
+
+    <script src= "consultaMujer.js"></script>
+    <script src= "consultaHombre.js"></script>
+</body>
+</html>
