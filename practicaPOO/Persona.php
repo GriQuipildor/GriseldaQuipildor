@@ -29,7 +29,7 @@ class Persona implements Favoritos{
         echo 'Bohemian Rhapsody';
     }
 }
-    $aux = new Persona($nombre, $apellido, $edad);
+    $aux = new Persona('Javier', 'Parra', '35');
     $aux->getColorFavorito();
     $aux->getCancionFavorita();
 
