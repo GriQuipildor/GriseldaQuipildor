@@ -3,7 +3,7 @@ require 'Interface.php';
 class Transporte implements Automovil{
 
     public function getColor(){
-        echo 'azul';
+        echo 'azul <br>';
     }
 
     public function getRuedas(){
@@ -12,6 +12,7 @@ class Transporte implements Automovil{
 } 
     $aux = new Transporte;
     $aux->getColor();
+    $aux->getRuedas();
 
 
 ?>
