@@ -8,7 +8,7 @@ class fecha{
     }
     public static function getHora(){
         $hora = date('H');
-        $minutos = date('m');
+        $minutos = date('i');
         $segundos = date('s');
         return $hora.':'.$minutos.':'.$segundos;
         }

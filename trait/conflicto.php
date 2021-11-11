@@ -9,8 +9,19 @@ trait Musica{
         echo 'Estoy escuchando música';
     }
 }
+trait Fecha{
+    function getFecha(){
+        echo date("d/m/Y");
+    }
+}
+trait Saludo{
+    function getSaludo(){
+        echo '<br> <mark>Hola mundo</mark>';
+    }
+}
+
 class Reproductor{
-    use Juego, Musica{
+    use Juego, Musica, Fecha, Saludo{
         // aqui llamo a la funcion Musica
         // Musica::Play insteadOf Juego;
         Juego::Play insteadOf Musica;
@@ -18,5 +29,7 @@ class Reproductor{
 }
 $reproductor = new Reproductor;
 $reproductor->Play();
+$reproductor->getFecha();
+$reproductor->getSaludo();
 
 ?>

@@ -15,13 +15,13 @@ public function get_modelo(){
 }
 
 public function set_color($color){
-    $this->color = $color
+    $this->color = $color;
 }
 
 public function set_modelo($modelo){
-    $this->color = $modelo
+    $this->color = $modelo;
 }
-
+}
 $peugeot = new Auto ('Rojo', 2010);
  echo $peugeot->get_color();
 
